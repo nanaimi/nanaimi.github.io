@@ -1,4 +1,4 @@
----
+`---
 layout: about
 title: about
 permalink: /
@@ -18,8 +18,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi there, welcome to my site. I am a student at ETH Zurich specializing in signal processing and machine learning. I have worked on projects in autonomous robotics ([DroGone](http://drogone.com)) at the [Autonomous Systems Lab](https://asl.ethz.ch/), adversarial attacks in machine learning, reinforcement learning, and 3D vision. Feel free to connect with me on any of the topics or projects I have worked on. Thoughts and opinions shared on this website are my own.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Quality memes always appreciated, send them my way.
