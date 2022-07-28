@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: A dummy long announcement I need to change
+date: 2022-07-28 17:09:00-0400
 inline: false
 ---
 

@@ -89,9 +89,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: nnnotes # blog_name will be displayed in your blog page
+blog_name: notes # blog_name will be displayed in your blog page
 blog_nav_title: notes # your blog must have a title for it to be displayed in the nav bar
-blog_description: a collection on notes on topics I studied or opinions I decided to voice
+blog_description: a collection of notes and opinions
 permalink: /blog/:year/:title/
 
 # Pagination

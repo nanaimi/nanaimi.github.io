@@ -1,12 +1,18 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: DroGone
+description: An autonomous drone-catching drone.
+img: assets/img/zero-dark.png
+redirect: https://drogone.com
 importance: 1
 category: work
 ---
 
+
+check out drogone.com
+
+
+TODO: CHANGE THE CONTENT BELOW
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.

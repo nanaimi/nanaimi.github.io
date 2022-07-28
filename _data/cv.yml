@@ -11,70 +11,66 @@
 - title: Education
   type: time_table
   contents:
-    - title: MSc.
+    - title: MSc.Electrical Engineering and Information Technology
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
       year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: BSc.
+        - Specializing in Signal Processing and Machine Learning
+    
+    - title: BSc. Electrical Engineering and Information Technology
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
       year: 2021
       description:
-        - Description 1.
-        - Description 2.
+      #   - Description 1.
+      #   - Description 2.
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: TBD
-      institution: TBD
-      year: TBD
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: TBD       
-      institution: 
-      year: 
-      description:
-        - Description 1.
-        - Description 2.
+# - title: Experience
+#   type: time_table
+#   contents:
+#     - title: TBD
+#       institution: TBD
+#       year: TBD
+#       description:
+#         - Description 1.
+#         - Description 2.
+#         - title: Description 3.
+#           contents:
+#             - Sub-description 1.
+#             - Sub-description 2.
+#     - title: TBD       
+#       institution: 
+#       year: 
+#       description:
+#         - Description 1.
+#         - Description 2.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: 
-      description: 
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: 
+#       description: 
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 
-      items: 
-    - year:
-      items: 
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 
+#       items: 
+#     - year:
+#       items: 
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
