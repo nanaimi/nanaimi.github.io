@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hole Detection in unstructured, 3D point clouds
+title: Hole Detection in 3D point clouds
 description: A 3D vision project in collaboration with Microsoft Research Zurich
 img: 
 redirect: https://github.com/nanaimi/HoleDet
