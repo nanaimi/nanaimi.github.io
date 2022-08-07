@@ -20,7 +20,7 @@ icon: 🦙 # the emoji used as the favicon (alternatively, provide image name in
 
 url: https:/nanaimi.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -36,10 +36,10 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
-max_width: 1000px
+max_width: 900px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -60,7 +60,7 @@ gitlab_username: # your GitLab user name
 twitter_username: NasibNaimi # your Twitter handle
 linkedin_username: nasibnaimi # your LinkedIn user name
 scholar_userid: eroGkvsAAAAJ # your Google Scholar ID
-orcid_id: 0000-0002-6245-7132 # your ORCID ID
+orcid_id: # 0000-0002-6245-7132 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -73,7 +73,7 @@ dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
 contact_note: >
-  Best way to reach me is via email.
+  reach me via email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -92,7 +92,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 blog_name: notes # blog_name will be displayed in your blog page
 blog_nav_title: notes # your blog must have a title for it to be displayed in the nav bar
 blog_description: a collection of notes and opinions
-permalink: /blog/:year/:title/
+permalink: /notes/:year/:title/
 
 # Pagination
 pagination:
@@ -123,8 +123,8 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+news_limit: 3 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
