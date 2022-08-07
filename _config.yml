@@ -73,7 +73,7 @@ dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
 contact_note: >
-  reach me via email.
+  drop me a line via email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -91,7 +91,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: notes # blog_name will be displayed in your blog page
 blog_nav_title: notes # your blog must have a title for it to be displayed in the nav bar
-blog_description: a collection of notes and opinions
+blog_description: various random notes, posts, and opinions
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -170,6 +170,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-twitter-plugin
+  - jekyll-seo-tag
   - jemoji
 
 # Sitemap settings
