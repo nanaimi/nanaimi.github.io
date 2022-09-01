@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: me.jpeg
+  image: nasibHD07cropped.jpeg
   image_cicular: false # crops the image to make it circular
   address: >
     <p> H Floor </p>
