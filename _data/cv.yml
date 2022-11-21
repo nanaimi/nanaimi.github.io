@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 28th August 1998
     - name: Languages
-      value: English, German, French, Italian, Persian
+      value: English(Fluent), German(Fluent), French(Fluent), Italian(Fluent), Persian(Basic), Mandarin(Basic)
 
 - title: Education
   type: time_table
@@ -16,6 +16,7 @@
       year: 2023
       description:
         - Specializing in Signal Processing and Machine Learning
+        - Deep Learning, Probabilistic AI, 3D Vision, Natural Language Processing, Shape Modeling and Geometry Processing, Information Theory, Advanced Topics in ML
     
     - title: BSc. Electrical Engineering and Information Technology
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
