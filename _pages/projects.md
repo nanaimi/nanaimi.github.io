@@ -9,6 +9,7 @@ display_categories: [work, university, fun]
 horizontal: false
 ---
 
+
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
@@ -56,3 +57,14 @@ horizontal: false
   {%- endif -%}
 {%- endif -%}
 </div>
+
+
+## github stats
+
+{% if site.data.repositories.github_users %}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for user in site.data.repositories.github_users %}
+      {% include repository/repo_user.html username=user %}
+  {% endfor %}
+</div>
+{% endif %}
