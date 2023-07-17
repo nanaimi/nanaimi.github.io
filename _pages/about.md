@@ -17,4 +17,4 @@ social: true  # includes social icons at the bottom of the page
 
 Hi there, welcome to my site. I am a student at ETH Zurich specializing in signal processing and machine learning. I have worked on projects in autonomous robotics ([DroGone](http://drogone.com)) at the [Autonomous Systems Lab](https://asl.ethz.ch/), [adversarial attacks in machine learning](https://arxiv.org/abs/2206.06761), reinforcement learning, and [3D vision](https://github.com/nanaimi/HoleDet). Feel free to connect with me on any of the topics or projects I have worked on. Thoughts and opinions shared on this website are my own.
 
-I am currently searching for interesting topics for a Master's Thesis. My interests lie in self-supervised learning in video, information theoretic machine learning, and energy-based self-supervised learning. 
+I am currently doing my Master's Thesis at the Computer Vision Lab at ETH Zurich on the topic of implicit neural representations for compression. My interests currently lie in representation learning, self-supervised learning, and compression.
