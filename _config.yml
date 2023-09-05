@@ -8,11 +8,11 @@ middle_name: A.
 last_name: Naimi
 email: nasib.n@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Nasib's personal website where he shares some lame things with the outside world.
+  a personal website for sharing stuff with the outside world.
 # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 footer_text: >  
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Nasib, Naimi, machine learning, reinforcement learning, signal processing, information theory, autonomous robots, drones, computer vision, eth zurich  # add your own keywords or leave empty
+keywords: Nasib, Naimi, engineer, machine learning, reinforcement learning, signal processing, information theory, autonomous robots, drones, computer vision, eth zurich  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🦙 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -32,7 +32,7 @@ highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-them
 
 # repo color theme
 repo_theme_light: graywhite       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: graywhite          # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: graywhite        # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -296,7 +296,7 @@ enable_tooltips:            false  # enables automatic tooltip links generated
 enable_darkmode:            false   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
-enable_project_categories:  false   # enables categorization of projects into
+enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 
