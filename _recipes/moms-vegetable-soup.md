@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Mom's Italian Vegetable Soup (Passato di Verdure)
-description: A smooth, comforting Italian vegetable soup that's both simple and nourishing - a family recipe that makes the most of fresh vegetables.
+title: Mom's Vegetable Soup (Passato di Verdure)
+description: My goto soup when under the weather.
 date: 2024-03-20
 prep_time: 15 minutes
 cook_time: 20 minutes
 servings: 4-6
-tags: [soup, italian, vegetarian, family recipe]
+tags: [soup, italian, vegetarian]
 ---
 
 There is nothing like a good vegetable soup when you are ill or just want to warm up. Get good ingredients, get better soup.

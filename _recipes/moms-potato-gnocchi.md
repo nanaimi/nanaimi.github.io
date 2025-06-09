@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Mom's Homemade Potato Gnocchi (Gnocchi di Patate)
-description: Light and fluffy homemade potato gnocchi - a traditional Italian recipe that turns simple ingredients into pillowy pasta perfection.
+title: Mom's Homemade Gnocchi
+description: Light and fluffy homemade potato gnocchi.
 date: 2024-03-20
 prep_time: 45 minutes
 cook_time: 5 minutes
 servings: 4-6
-tags: [pasta, italian, vegetarian, family recipe, main course]
+tags: [pasta, italian, vegetarian]
 ---
 
 These traditional Italian potato gnocchi are light and fluffy. The key to perfect gnocchi lies in using the right potatoes and handling the dough well.

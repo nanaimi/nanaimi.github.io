@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Simple Homemade Pasta (Pasta Fresca all'Uovo)
-description: A classic egg pasta dough recipe with perfect proportions - 100g flour per egg makes it easy to scale up or down.
+description: A classic pasta recipe.
 date: 2024-03-20
 prep_time: 45 minutes (including resting)
 cook_time: 2-3 minutes
 servings: 2-3 per egg
-tags: [pasta, italian, vegetarian, basics]
+tags: [pasta, italian, vegetarian]
 ---
 
 Homemade pasta is simple but takes time. If somebody makes this for you, you clearly mean something to them. The ratio of 100g flour per egg makes it easy to scale the recipe to your needs.

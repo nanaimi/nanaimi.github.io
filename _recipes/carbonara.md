@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Classic Spaghetti Carbonara
-description: A creamy, peppery Roman pasta dish made with eggs, pecorino, and guanciale - or as we like to call it, spaghetti breakfast!
+title: A Real Carbonara recipe
+description: A roman classic - or allegedly, spaghetti breakfast.
 date: 2024-03-20
 prep_time: 15 minutes
 cook_time: 20 minutes
 servings: 4
-tags: [pasta, italian, main course, breakfast]
+tags: [pasta, italian]
 ---
 
-Carbonara is one of Rome's most iconic pasta dishes. The key to perfect carbonara lies in the technique - particularly in managing the heat when combining the eggs with the pasta to create a creamy sauce without scrambling the eggs.
+Carbonara is one of Rome's most iconic pasta dishes. The key to perfect carbonara lies in the technique. Particularly in managing the heat when combining the eggs with the pasta to create a creamy sauce without scrambling the eggs.
 
 ## Ingredients
 
