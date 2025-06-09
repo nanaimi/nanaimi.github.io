@@ -2,14 +2,11 @@
 layout: page
 title: recipes
 permalink: /recipes/
-description: A collection of my favorite recipes and cooking adventures.
+description: life is to short to eat bad food.
 nav: true
 nav_order: 5
 ---
 
-# Recipes
-
-life is to short to eat bad food.
 
 {% assign recipes = site.recipes | sort: 'date' | reverse %}
 
