@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Simple Homemade Pasta (Pasta Fresca all'Uovo)
-description: A classic pasta recipe.
+title: simple homemade pasta (pasta fresca all'uovo)
+description: a classic pasta recipe.
 date: 2024-03-20
 prep_time: 45 minutes (including resting)
 cook_time: 2-3 minutes

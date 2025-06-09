@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mom's Homemade Gnocchi
-description: Light and fluffy homemade potato gnocchi.
+title: homemade gnocchi
+description: light and fluffy homemade potato gnocchi.
 date: 2024-03-20
 prep_time: 45 minutes
 cook_time: 5 minutes

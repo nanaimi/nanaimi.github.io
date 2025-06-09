@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A Real Carbonara recipe
-description: A roman classic - or allegedly, spaghetti breakfast.
+title: carbonara
+description: a roman classic - or allegedly, spaghetti breakfast.
 date: 2024-03-20
 prep_time: 15 minutes
 cook_time: 20 minutes
