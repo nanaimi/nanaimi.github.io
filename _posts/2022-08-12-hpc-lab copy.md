@@ -4,7 +4,7 @@ title: High Performance Computing - A Practical Guide
 description: A comprehensive guide to High Performance Computing concepts, architectures, and best practices, with hands-on examples from ETH HPC Lab
 date: 2024-03-20
 categories: code
-published: true
+published: false
 
 authors:
   - name: Nasib Naimi

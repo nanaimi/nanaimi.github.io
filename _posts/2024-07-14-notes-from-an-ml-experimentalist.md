@@ -4,7 +4,7 @@ title: notes on a machine learning experimentalist
 description: How do the world's leading researchers in machine learning go about conducting experiments?
 date: 2024-07-14
 categories: academic
-published: true
+published: false
 
 authors:
   - name: Nasib Naimi
