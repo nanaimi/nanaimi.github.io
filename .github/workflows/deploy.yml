@@ -13,68 +13,66 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0 # Important for deployment history
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
+          lfs: false
+          clean: true
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2.2'
-        bundler-cache: true
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
 
-    - name: Bundle install
-      run: |
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
-        
-    - name: Setup deploy options
-      id: setup
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then # pull request
-          echo "SRC_BRANCH=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
-          echo "NO_PUSH=--no-push" >> $GITHUB_OUTPUT
-        elif [[ ${GITHUB_REF} = refs/heads/* ]]; then # branch, e.g. master, source etc
-          echo "SRC_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
-        fi
-        echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_OUTPUT
-        
-    - name: Deploy website 
-      run: |
-        if [ -n "${{ steps.setup.outputs.NO_PUSH }}" ]; then
-          echo "Pull request detected, skipping deployment"
-          exit 0
-        fi
-        
-        # Clone the repository again to avoid conflicts with the current repository
-        TEMP_REPOSITORY="$(mktemp -d)"
-        git clone "https://github.com/${GITHUB_REPOSITORY}.git" "$TEMP_REPOSITORY"
-        cd "$TEMP_REPOSITORY"
-        
-        # Configure Git
-        git config user.name "GitHub Actions"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        # Build site
-        bundle install
-        bundle exec jekyll build
-        
-        # Create gh-pages branch
-        git checkout --orphan gh-pages
-        
-        # Delete and move files
-        find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-        mv _site/* .
-        rm -R _site/
-        
-        # Push to gh-pages
-        touch .nojekyll
-        git add -A
-        git commit --allow-empty -m "Deploy website via GitHub Actions"
-        git push -f origin gh-pages
-        
-        echo "Deployed successfully!"
+      - name: Install dependencies
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Create a temporary directory
+          TEMP_DIR=$(mktemp -d)
+          
+          # Copy the built site to the temporary directory
+          cp -R _site/* "$TEMP_DIR"
+          
+          # Switch to gh-pages branch (create if it doesn't exist)
+          if git show-ref --verify --quiet refs/heads/gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+          
+          # Clean the working directory
+          git rm -rf .
+          
+          # Copy the built site back
+          cp -R "$TEMP_DIR"/* .
+          
+          # Create necessary files
+          touch .nojekyll
+          
+          # Stage and commit
+          git add -A
+          git commit -m "Deploy website - $(date +'%Y-%m-%d %H:%M:%S')"
+          
+          # Force push
+          git push -f origin gh-pages
