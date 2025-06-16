@@ -15,28 +15,66 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Setup Ruby
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Important for deployment history
+
+    - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0.2'
+        ruby-version: '3.2.2'
         bundler-cache: true
-    - name: Install deps
+
+    - name: Bundle install
       run: |
-        npm install -g mermaid.cli
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+        
     - name: Setup deploy options
       id: setup
       run: |
-        git config --global user.name "GitHub Action"
+        git config --global user.name "GitHub Actions"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then # pull request
-          echo "::set-output name=SRC_BRANCH::${GITHUB_HEAD_REF}"
-          echo "::set-output name=NO_PUSH::--no-push"
+          echo "SRC_BRANCH=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
+          echo "NO_PUSH=--no-push" >> $GITHUB_OUTPUT
         elif [[ ${GITHUB_REF} = refs/heads/* ]]; then # branch, e.g. master, source etc
-          echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
+          echo "SRC_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
         fi
-        echo "::set-output name=DEPLOY_BRANCH::gh-pages"
+        echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_OUTPUT
+        
     - name: Deploy website 
-      run:  yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
-                    --src ${{ steps.setup.outputs.SRC_BRANCH }} 
-                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
+      run: |
+        if [ -n "${{ steps.setup.outputs.NO_PUSH }}" ]; then
+          echo "Pull request detected, skipping deployment"
+          exit 0
+        fi
+        
+        # Clone the repository again to avoid conflicts with the current repository
+        TEMP_REPOSITORY="$(mktemp -d)"
+        git clone "https://github.com/${GITHUB_REPOSITORY}.git" "$TEMP_REPOSITORY"
+        cd "$TEMP_REPOSITORY"
+        
+        # Configure Git
+        git config user.name "GitHub Actions"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # Build site
+        bundle install
+        bundle exec jekyll build
+        
+        # Create gh-pages branch
+        git checkout --orphan gh-pages
+        
+        # Delete and move files
+        find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+        mv _site/* .
+        rm -R _site/
+        
+        # Push to gh-pages
+        touch .nojekyll
+        git add -A
+        git commit --allow-empty -m "Deploy website via GitHub Actions"
+        git push -f origin gh-pages
+        
+        echo "Deployed successfully!"
