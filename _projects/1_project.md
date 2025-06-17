@@ -2,10 +2,19 @@
 layout: page
 title: DroGone
 description: An autonomous drone-catching drone.
+summary: A cutting-edge autonomous system that uses computer vision and deep learning to detect, track, and capture rogue drones. Features real-time flight path prediction and precision interception capabilities.
 img: assets/img/zero-dark.png
 redirect: https://drogone.com
 importance: 1
 category: work
+date: 2024-01-01
+technologies: 
+  - Python
+  - ROS
+  - Computer Vision
+  - Deep Learning
+  - Object Detection
+  - Flight Control
 ---
 
 
