@@ -4,7 +4,7 @@ title: recipes
 permalink: /recipes/
 description: life is to short to eat bad food.
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 
