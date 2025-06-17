@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hole Detection in Robotics
-description: Advanced computer vision system for automated hole detection and quality inspection in manufacturing robotics at Microsoft.
+description: Computer vision system for automated hole detection in manufacturing robotics at Microsoft.
 summary: Sophisticated machine vision system leveraging deep learning and computer vision techniques for automated hole detection, surface defect inspection, and quality control in manufacturing environments. The project employs convolutional neural networks (CNNs), advanced image processing algorithms, and real-time analysis to identify, classify, and measure holes, surface defects, and manufacturing anomalies with sub-millimeter precision. Designed for industrial quality control applications in automotive, aerospace, and precision manufacturing industries where component integrity is critical.
 img: assets/img/microsoft.png
 redirect: https://github.com/nanaimi/HoleDet
@@ -11,22 +11,10 @@ date: 2023-09-01
 technologies:
   - Python
   - PyTorch
-  - TensorFlow
   - Computer Vision
-  - Deep Learning
-  - CNN Architecture
   - YOLO
-  - Mask R-CNN
   - OpenCV
-  - Industrial Robotics
-  - Quality Inspection
-  - Machine Vision
-  - Real-time Processing
-  - Image Processing
-  - Defect Detection
   - Manufacturing
-  - Optical Systems
-  - Automated Inspection
 ---
 
 ## Project Overview
