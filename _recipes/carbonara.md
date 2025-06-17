@@ -9,7 +9,7 @@ servings: 4
 tags: [pasta, italian]
 ---
 
-Carbonara is one of Rome's most iconic pasta dishes. The key to perfect carbonara lies in the technique. Particularly in managing the heat when combining the eggs with the pasta to create a creamy sauce without scrambling the eggs.
+Carbonara is the dish with which every italian will try and pick up a girl. The key to perfect carbonara lies in the technique, particularly in managing the heat when combining the eggs with the pasta to create a creamy sauce without scrambling the eggs.
 
 ## Ingredients
 
@@ -60,16 +60,11 @@ Carbonara is one of Rome's most iconic pasta dishes. The key to perfect carbonar
 
 - Temperature control is crucial: the pan should be warm enough to create a creamy sauce but not so hot that it scrambles the eggs
 - Using room temperature eggs helps create a smoother sauce
-- Traditional Roman carbonara uses guanciale, but good-quality bacon makes a delicious substitute
-- The pasta water should be very well salted - it will help season the final dish
-- Don't skip separating the meat from its rendered fat - this gives you better control over the final consistency
+- Traditional Roman carbonara uses guanciale.
+- Don't skip separating the meat from its rendered fat, you want the guanciale to remain crispy until served.
+- Use bucatini if you can.
 
-## Authentic Notes
 
-- Traditional Roman carbonara never includes cream or garlic
-- The creaminess comes solely from the eggs and cheese
-- The dish should be silky and coat the pasta, not be overly saucy
+## Is it actually called "Spaghetti Breakfast"?
 
-## Why "Spaghetti Breakfast"?
-
-With eggs and bacon as key ingredients, this pasta dish makes for a surprisingly perfect breakfast option - though it's traditionally served as a primo (first course) for lunch or dinner in Italy. 🍳 🍝 
+With eggs and bacon as key ingredients, this pasta dish makes for a surprisingly perfect breakfast option might say. If you really want to bother a roman, tell them carbonara was invented by american soldiers in italy mid-century and is actually called ["spaghetti breakfast"](https://www.bbc.com/travel/article/20230331-carbonara-the-iconic-pasta-causing-a-dispute#:~:text=Cozzella%20interviewed%20the,from%20the%20British.).

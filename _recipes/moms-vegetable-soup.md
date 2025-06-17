@@ -54,7 +54,6 @@ There is nothing like a good vegetable soup when you are ill or just want to war
   - Fresh parsley
   - Fresh ground black pepper
   - Crusty bread
-- Can be served with homemade gnocchi for a more substantial meal
 
 ## Tips
 
