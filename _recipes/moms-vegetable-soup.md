@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mom's vegetable soup (passato di verdure)
+title: vegetable soup
 description: my goto soup when under the weather.
 date: 2024-03-20
 prep_time: 15 minutes
