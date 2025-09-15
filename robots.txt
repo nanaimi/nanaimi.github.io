@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nasibnaimi.com/sitemap.xml
